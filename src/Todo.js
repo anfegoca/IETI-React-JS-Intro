@@ -7,7 +7,7 @@ export class Todo extends React.Component {
     }
 
     render() {
-        const date = (this.props.dueDate).toString();
+        const date = String(this.props.dueDate);
         return (
             <div>
                 <h2>{this.props.text}</h2>
